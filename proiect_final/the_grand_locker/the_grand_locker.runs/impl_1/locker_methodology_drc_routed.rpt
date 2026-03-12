@@ -1,0 +1,213 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jun  3 23:26:47 2025
+| Host         : Lenovo running 64-bit major release  (build 9200)
+| Command      : report_methodology -file locker_methodology_drc_routed.rpt -pb locker_methodology_drc_routed.pb -rpx locker_methodology_drc_routed.rpx
+| Design       : locker
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 33
++-----------+----------+--------------------------------+--------+
+| Rule      | Severity | Description                    | Checks |
++-----------+----------+--------------------------------+--------+
+| LUTAR-1   | Warning  | LUT drives async reset alert   | 8      |
+| TIMING-18 | Warning  | Missing input or output delay  | 17     |
+| TIMING-20 | Warning  | Non-clocked latch              | 7      |
+| LATCH-1   | Advisory | Existing latches in the design | 1      |
++-----------+----------+--------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell o1/u3/rez_reg_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) o1/u6/rez_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell o1/u4/FSM_onehot_cnt_display[3]_i_3__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) o1/FSM_onehot_cnt_display_reg[0]/PRE, o1/FSM_onehot_cnt_display_reg[1]/CLR,
+o1/FSM_onehot_cnt_display_reg[2]/CLR, o1/FSM_onehot_cnt_display_reg[3]/CLR,
+o1/light_reg/CLR, o1/stop_reg/CLR, o1/u2/aux_reg[3]/CLR,
+o1/u3/aux_reg[0]/CLR, o1/u3/aux_reg[1]/CLR, o1/u3/aux_reg[2]/CLR,
+o1/u3/aux_reg[3]/CLR, o1/u4/aux_reg[0]/CLR, o1/u4/aux_reg[1]/CLR,
+o1/u4/aux_reg[2]/CLR, o1/u4/aux_reg[3]/CLR (the first 15 of 18 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell o1/u4/rez_reg_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) o1/u7/rez_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell o1/u4/rez_reg_i_2__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) o1/u8/rez_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell o2/u3/rez_reg_i_2__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) o2/u6/rez_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell o2/u4/FSM_onehot_cnt_display[3]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) o2/FSM_onehot_cnt_display_reg[0]/PRE, o2/FSM_onehot_cnt_display_reg[1]/CLR,
+o2/FSM_onehot_cnt_display_reg[2]/CLR, o2/FSM_onehot_cnt_display_reg[3]/CLR,
+o2/light_reg/CLR, o2/stop_reg/CLR, o2/u2/aux_reg[3]/CLR,
+o2/u3/aux_reg[0]/CLR, o2/u3/aux_reg[1]/CLR, o2/u3/aux_reg[2]/CLR,
+o2/u3/aux_reg[3]/CLR, o2/u4/aux_reg[0]/CLR, o2/u4/aux_reg[1]/CLR,
+o2/u4/aux_reg[2]/CLR, o2/u4/aux_reg[3]/CLR (the first 15 of 18 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell o2/u4/rez_reg_i_2__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) o2/u7/rez_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell o2/u4/rez_reg_i_2__5, with 2 or more inputs, drives asynchronous preset/clear pin(s) o2/u8/rez_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on DOWN relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on PRESS relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on RST relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on UP relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on An[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on An[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on An[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on An[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on Cat[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on Cat[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on Cat[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on Cat[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on Cat[4] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on Cat[5] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on Cat[6] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on led_int relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on led_liber relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch o1/u6/rez_reg cannot be properly analyzed as its control pin o1/u6/rez_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch o1/u7/rez_reg cannot be properly analyzed as its control pin o1/u7/rez_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch o1/u8/rez_reg cannot be properly analyzed as its control pin o1/u8/rez_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch o2/u6/rez_reg cannot be properly analyzed as its control pin o2/u6/rez_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch o2/u7/rez_reg cannot be properly analyzed as its control pin o2/u7/rez_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch o2/u8/rez_reg cannot be properly analyzed as its control pin o2/u8/rez_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch o3/rez_reg cannot be properly analyzed as its control pin o3/rez_reg/G is not reached by a timing clock
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 7 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

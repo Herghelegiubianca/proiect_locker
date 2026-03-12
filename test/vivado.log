@@ -1,0 +1,288 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri May 16 14:02:32 2025
+# Process ID         : 14720
+# Current directory  : C:/Users/bherg/Desktop/PSN/proiect_locker/test
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent2740 C:\Users\bherg\Desktop\PSN\proiect_locker\test\test.xpr
+# Log file           : C:/Users/bherg/Desktop/PSN/proiect_locker/test/vivado.log
+# Journal file       : C:/Users/bherg/Desktop/PSN/proiect_locker/test\vivado.jou
+# Running On         : Lenovo
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 7435HS                             
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 25439 MB
+# Swap memory        : 1610 MB
+# Total Virtual      : 27049 MB
+# Available Virtual  : 20017 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.srcs/utils_1/imports/synth_1/test.dcp with file C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/synth_1/test.dcp
+launch_runs synth_1 -jobs 8
+[Fri May 16 14:07:59 2025] Launched synth_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 14:08:35 2025] Launched impl_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri May 16 14:09:28 2025] Launched impl_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-20:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1193.438 ; gain = 11.016
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BE07EEA
+set_property PROGRAM.FILE {C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/test.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.srcs/utils_1/imports/synth_1/test.dcp with file C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/synth_1/test.dcp
+launch_runs synth_1 -jobs 8
+[Fri May 16 14:12:16 2025] Launched synth_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri May 16 14:13:15 2025] Launched synth_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 14:13:51 2025] Launched impl_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri May 16 14:14:40 2025] Launched impl_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-20:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1234.699 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BE07EEA
+set_property PROGRAM.FILE {C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/test.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.srcs/utils_1/imports/synth_1/test.dcp with file C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/synth_1/test.dcp
+launch_runs synth_1 -jobs 8
+[Fri May 16 14:17:00 2025] Launched synth_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 14:17:57 2025] Launched impl_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri May 16 14:18:49 2025] Launched impl_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-20:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1248.055 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BE07EEA
+set_property PROGRAM.FILE {C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/test.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.srcs/utils_1/imports/synth_1/test.dcp with file C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/synth_1/test.dcp
+launch_runs synth_1 -jobs 8
+[Fri May 16 14:23:22 2025] Launched synth_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 14:24:36 2025] Launched impl_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri May 16 14:25:27 2025] Launched impl_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-20:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1250.992 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BE07EEA
+set_property PROGRAM.FILE {C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/test.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.srcs/utils_1/imports/synth_1/test.dcp with file C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/synth_1/test.dcp
+launch_runs synth_1 -jobs 8
+[Fri May 16 14:28:13 2025] Launched synth_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 14:30:10 2025] Launched impl_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri May 16 14:31:04 2025] Launched impl_1...
+Run output will be captured here: C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-20:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1253.711 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BE07EEA
+set_property PROGRAM.FILE {C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/test.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/bherg/Desktop/PSN/proiect_locker/test/test.runs/impl_1/test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 16 15:27:09 2025...

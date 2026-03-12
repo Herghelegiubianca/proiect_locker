@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun May 25 16:22:50 2025
+# Process ID         : 4732
+# Current directory  : C:/Users/bherg/Desktop/PSN/proiect_locker/proiect_placuta_mea/MPG
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent16812 C:\Users\bherg\Desktop\PSN\proiect_locker\proiect_placuta_mea\MPG\MPG.xpr
+# Log file           : C:/Users/bherg/Desktop/PSN/proiect_locker/proiect_placuta_mea/MPG/vivado.log
+# Journal file       : C:/Users/bherg/Desktop/PSN/proiect_locker/proiect_placuta_mea/MPG\vivado.jou
+# Running On         : Lenovo
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 7435HS                             
+# CPU Frequency      : 3094 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 25439 MB
+# Swap memory        : 1610 MB
+# Total Virtual      : 27049 MB
+# Available Virtual  : 13520 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bherg/Desktop/PSN/proiect_locker/proiect_placuta_mea/MPG/MPG.xpr
+update_compile_order -fileset sources_1
